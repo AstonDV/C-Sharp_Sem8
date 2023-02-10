@@ -91,8 +91,10 @@ void Main()
     int[,] array = GetArray(row, col, minVal, maxVal);
     PrintArray(array);
     int[] oneLineArray = MatrixToArray(array);
+    Console.WriteLine();
     BubbleSort(oneLineArray);
     Console.WriteLine($"{String.Join(", ", oneLineArray)}");
+    Console.WriteLine();
     CountElements(oneLineArray);
 }
 
